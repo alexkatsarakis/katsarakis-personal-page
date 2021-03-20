@@ -1,0 +1,68 @@
+#aboutMe-cover {
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+
+#aboutMe-coverImage {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    height: 80vh;
+    background-image: url("../../../resources/icons/aboutMeBG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#aboutMe-personImageHead {
+    width: 30%;
+    height: 20vh;
+    margin-left: 20px;
+    margin-top: -4vh;
+    background-image: url("./myselfHead.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#aboutMe-info {
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 25%;
+    z-index: 2;
+    display: -webkit-inline-box;
+}
+
+#aboutMe-name {
+    font-size: 3em;
+    color: var(--main-color-hover);
+}
+
+
+@media screen and (max-width: 1200px) {
+    #aboutMe-personImage {
+        position: absolute;
+        width: 30%;
+        z-index: 5;
+        height: 60vh;
+        margin-top: 5%;
+        right: 0;
+        background-image: url("./myself.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    #aboutMe-personImageHead {
+        position: absolute;
+        width: 30%;
+        z-index: 5;
+        height: 20vh;
+        margin-top: 17%;
+        right: 10%;
+        background-image: url("./myselfHead.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}

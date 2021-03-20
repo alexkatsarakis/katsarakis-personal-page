@@ -1,0 +1,69 @@
+.carouselWrapper {
+    width: 100%;
+    height: var(--carousel-height);
+    overflow: hidden;
+}
+
+.carouselButLeft {
+    float:left;
+    width: 5%;
+    height: calc(var(--carousel-height)*10/100);
+    margin-top: calc(var(--carousel-height)/2 - var(--carousel-height)*5/100);
+    cursor: pointer;
+    transform: rotate(90deg);
+    background-image: url("./images/dropdown_toggle.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.carouselButRight {
+    float:left;
+    width: 5%;
+    height: calc(var(--carousel-height)*10/100);
+    margin-top: calc(var(--carousel-height)/2 - var(--carousel-height)*5/100);
+    cursor: pointer;
+    transform: rotate(-90deg);
+    background-image: url("./images/dropdown_toggle.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.carouselImageLeft {
+    float:left;
+    width: 20%;
+    height: calc(var(--carousel-height)*50/100);
+    margin-top: calc(var(--carousel-height)/2 - var(--carousel-height)*25/100);
+}
+
+.carouselImageMid {
+    float:left;
+    width: 50%;
+    height: calc(var(--carousel-height)*100/100);
+    margin-top: calc(var(--carousel-height)/2 - var(--carousel-height)*50/100);
+}
+
+.carouselImageRight {
+    float:left;
+    width: 20%;
+    height: calc(var(--carousel-height)*50/100);
+    margin-top: calc(var(--carousel-height)/2 - var(--carousel-height)*25/100);
+}
+
+.carouselMainImageDesc {
+    float:left;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: var(--main-color-text);
+    font-size: large;
+    text-align: center;
+}
+
+.carouselItem {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: linear background-image 0.5s;
+}

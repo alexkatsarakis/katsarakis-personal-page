@@ -1,0 +1,45 @@
+{
+    "Experience": [
+        {
+            "head": "Graduate Teaching Assistant",
+            "comment": "University of Crete, Department of Computer Science",
+            "image": "csdUoC.png",
+            "time": {
+                "started": "2019"
+            },
+            "body": "- Computer Languages and Compilers (CS-340) Feb 2021 - Now \n- Software Engineering (CS-352) Sept 2020 - Feb 2021, \n- Computer Languages and Compilers (CS-340) Feb 2020 - Jun 2020, \n- Data Structures (CS-240) Sep 2019 - Feb 2020",
+            "location": "Heraklion, Crete, Greece"
+        },
+        {
+            "head": "Intern",
+            "comment": "Foundation for Research and Technology - Hellas (FORTH)",
+            "image": "iteForth.png",
+            "time": {
+                "started": "Jun 2017",
+                "ended": "Sep 2017"
+            },
+            "location": "Heraklion, Crete, Greece"
+        }
+    ],
+    "Education": [
+        {
+            "head": "University of Crete, Department of Computer Science",
+            "comment": "Master's degree, Computer Software Engineering",
+            "image": "csdUoC.png",
+            "time": {
+                "started": "2019"
+            },
+            "location": "Heraklion, Crete, Greece"
+        },
+        {
+            "head": "University of Crete, Department of Computer Science",
+            "comment": "Bachelor's degree, Computer Software Engineering, 8.18/10",
+            "image": "csdUoC.png",
+            "time": {
+                "started": "2015",
+                "ended": "2019"
+            },
+            "location": "Heraklion, Crete, Greece"
+        }
+    ]
+}

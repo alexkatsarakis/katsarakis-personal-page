@@ -1,0 +1,209 @@
+{
+    "GameStudio": {
+        "title": "Game Studio: Live Game Development",
+        "description": "A browser game engine for interactive game development with a visual programming Language",
+        "information": {
+            "Language": "Javascript",
+            "External Tools": [
+                "Blockly", 
+                "MatterJS"
+            ]
+        },
+        "links": [
+            {
+                "name": "Live Demo",
+                "url": "https://alexkatsarakis.github.io/"
+            },
+            {
+                "name": "Wiki",
+                "url": "https://alexkatsarakis.github.io/wiki.html"
+            },
+            {
+                "name": "Repository",
+                "url": "https://github.com/alexkatsarakis/GameEnvironment"
+            }
+        ],
+        "images": [
+            {
+                "url":"../js/UI/projects/images/screens1.png"
+            },
+            {
+                "url":"../js/UI/projects/images/screens8.png"
+            },
+            {
+                "url":"../js/UI/projects/images/screens2.png"
+            },
+            {
+                "url":"../js/UI/projects/images/screens3.png"
+            },
+            {
+                "url":"../js/UI/projects/images/screens4.png"
+            },
+            {
+                "url":"../js/UI/projects/images/screens5.png"
+            },
+            {
+                "url":"../js/UI/projects/images/screens6.png"
+            },
+            {
+                "url":"../js/UI/projects/images/screens7.png"
+            }
+        ]
+    },
+    "VPLCollab": {
+        "title": "Collaborative Visual Programming Workspace for Blockly",
+        "description": "A collaborative system for visual programming languages",
+        "information": {
+            "Language": "Javascript",
+            "External Tools": [
+                "PeerJS"
+            ],
+            "Collaborators": [
+                "Yannis Valsamakis",
+                "Emmanouil Agapakis"
+            ]
+        },
+        "links": [
+            {
+                "name": "Demo Video",
+                "url": "https://alexkatsarakis.github.io/"
+            },
+            {
+                "name": "Paper",
+                "url": "https://ieeexplore.ieee.org/abstract/document/9127253"
+            }
+        ],
+        "images": [
+            {
+                "url":"../js/UI/projects/images/screens1.png"
+            },
+            {
+                "url":"../js/UI/projects/images/screens8.png"
+            },
+            {
+                "url":"../js/UI/projects/images/screens2.png"
+            },
+            {
+                "url":"../js/UI/projects/images/screens3.png"
+            },
+            {
+                "url":"../js/UI/projects/images/screens4.png"
+            },
+            {
+                "url":"../js/UI/projects/images/screens5.png"
+            },
+            {
+                "url":"../js/UI/projects/images/screens6.png"
+            },
+            {
+                "url":"../js/UI/projects/images/screens7.png"
+            }
+        ]
+    },
+    "ImproveMe": {
+        "title": "Improve Me",
+        "description": "An Application focusing on improving someones cognitive abilities in a game form (also can be used to see improvement with charts and tips)",
+        "information": {
+            "Language": "Javascript",
+            "External Tools": [
+                "Cordova", 
+                "React",
+                "React Native"
+            ]
+        },
+        "links": [
+            {
+                "name": "Repository",
+                "url": "https://github.com/alexkatsarakis/improveme"
+            }
+        ],
+        "images": [
+            {
+                "url":"../js/UI/projects/images/improveme4.png"
+            },
+            {
+                "url":"../js/UI/projects/images/improveme2.png"
+            },
+            {
+                "url":"../js/UI/projects/images/improveme1.png"
+            },
+            {
+                "url":"../js/UI/projects/images/improveme3.png"
+            }
+        ]
+    },
+    "Q&ABot": {
+        "title": "Question And Answer Discord Bot",
+        "description": "A Discord Bot to receive and answer questions on discord with an intuitive UI for users through Discord",
+        "information": {
+            "Language": "Javascript",
+            "External Tools": [
+                "Node", 
+                "Discord.js", 
+                "Sqlite3", 
+                "Express"
+            ]
+        },
+        "links": [
+            {
+                "name": "Repository",
+                "url": "https://github.com/alexkatsarakis/hy352_discordbot"
+            }
+        ],
+        "images": [
+            {
+                "url":"../js/UI/projects/images/qaDiscord1.png"
+            },
+            {
+                "url":"../js/UI/projects/images/qaDiscord2.png"
+            },
+            {
+                "url":"../js/UI/projects/images/qaDiscord3.png"
+            },
+            {
+                "url":"../js/UI/projects/images/qaDiscord4.png"
+            },
+            {
+                "url":"../js/UI/projects/images/qaDiscord5.png"
+            }
+        ]
+    },
+    "RefaFriend": {
+        "title": "Refer A Friend Discord Bot",
+        "description": "A Discord Bot to keep track invites on a discord server and a live leaderboard",
+        "information": {
+            "Language": "Javascript",
+            "External Tools": [
+                "Node", 
+                "Discord.js", 
+                "Sqlite3", 
+                "Express"
+            ]
+        },
+        "links": [
+            {
+                "name": "Repository",
+                "url": "https://github.com/alexkatsarakis/magicuz_discordbot"
+            }
+        ],
+        "images": [
+            
+        ]
+    },
+    "GenericList": {
+        "title": "Generic List",
+        "description": "A Generic C++ list for all types, with dynamic (and configurable) insert,delete,search options",
+        "information": {
+            "Language": "C++"
+        },
+        "links": [
+            {
+                "name": "Repository",
+                "url": "https://github.com/alexkatsarakis/genericList"
+            }
+        ],
+        "images": [
+            
+        ]
+    }
+}

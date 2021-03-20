@@ -1,0 +1,11 @@
+{
+    "email": {
+        "name": "email",
+        "link": "mailto: akatsarakis@csd.uoc.gr"
+    },
+    "linkedIn": {
+        "name": "linkedIn",
+        "data": "Alexandros Katsarakis",
+        "link": "https://www.linkedin.com/in/alexandros-katsarakis/"
+    }
+}

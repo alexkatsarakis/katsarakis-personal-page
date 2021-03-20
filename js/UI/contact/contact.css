@@ -1,0 +1,14 @@
+#contacts-wrapper {
+    display: flex;
+}
+
+.contact-item {
+    height: 4vh;
+    width: 4vh;
+    margin-right: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
