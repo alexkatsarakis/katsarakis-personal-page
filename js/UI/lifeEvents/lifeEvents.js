@@ -1,4 +1,4 @@
-export default {name:'Life Events',link: '../js/UI/lifeEvents/lifeEvents.html',cb:onExperienceLoad};
+export default {name:'Life Events',link: './js/UI/lifeEvents/lifeEvents.html',cb:onExperienceLoad};
 
 import httpRequest from '../../utils/httpRequest.js'
 import uiFactory from '../../utils/UIFactory.js';
@@ -93,7 +93,7 @@ function createDate(type, expWrapper, year, experiences){
 }
 
 async function onExperienceLoad(){
-    let exp = await httpRequest('GET', '../resources/json/lifeEvents.json', null);
+    let exp = await httpRequest('GET', './resources/json/lifeEvents.json', null);
     exp = JSON.parse(exp);
 
     let earliestYear = 3000;

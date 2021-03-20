@@ -23,7 +23,7 @@
     ],
     "Education": [
         {
-            "head": "University of Crete, Department of Computer Science",
+            "head": "University of Crete, CSD",
             "comment": "Master's degree, Computer Software Engineering",
             "image": "csdUoC.png",
             "time": {
@@ -32,7 +32,7 @@
             "location": "Heraklion, Crete, Greece"
         },
         {
-            "head": "University of Crete, Department of Computer Science",
+            "head": "University of Crete, CSD",
             "comment": "Bachelor's degree, Computer Software Engineering, 8.18/10",
             "image": "csdUoC.png",
             "time": {

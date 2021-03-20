@@ -3,7 +3,7 @@ import httpRequest from '../../utils/httpRequest.js'
 import Carousel from './Carousel.js'
 import uiFactory from '../../utils/UIFactory.js'
 
-export default {name:'Projects',link: '../js/UI/projects/projects.html',cb:onProjectsLoaded};
+export default {name:'Projects',link: './js/UI/projects/projects.html',cb:onProjectsLoaded};
 
 async function onProjectsLoaded(){
     let proje = document.getElementById('projects-test');
@@ -22,7 +22,7 @@ async function onProjectsLoaded(){
 
     let resp;
     let toShow = '';
-    resp = await httpRequest('GET', '../resources/json/personalProjects.json', null);
+    resp = await httpRequest('GET', './resources/json/personalProjects.json', null);
     resp = JSON.parse(resp);
 
     let projectsWrapper = document.getElementById('projects-wrapper');

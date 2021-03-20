@@ -1,7 +1,7 @@
 import httpRequest from '../../utils/httpRequest.js'
 import uiFactory from '../../utils/UIFactory.js';
 
-export default {name:'Background',link: '../js/UI/background/background.html',cb:onBackgroundLoad};
+export default {name:'Background',link: './js/UI/background/background.html',cb:onBackgroundLoad};
 
 function createBackgroundItem(item, parent){
     let itemWrapper = uiFactory.createElement({
@@ -12,7 +12,7 @@ function createBackgroundItem(item, parent){
     uiFactory.createElement({
         parent: itemWrapper,
         classList: 'background-category-item-head-image'
-    }).style.backgroundImage = `url("../js/UI/background/images/${item.image}")`
+    }).style.backgroundImage = `url("./js/UI/background/images/${item.image}")`
 
     uiFactory.createElement({
         parent: itemWrapper,
@@ -54,7 +54,7 @@ function createBackgroundItem(item, parent){
 }
 
 async function onBackgroundLoad(){
-    let info = await httpRequest('GET', '../resources/json/background.json', null);
+    let info = await httpRequest('GET', './resources/json/background.json', null);
     info = JSON.parse(info);
 
     const wrapper = document.getElementById('background-wrapper');

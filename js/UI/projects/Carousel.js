@@ -1,7 +1,7 @@
 import uiFactory from '../../utils/UIFactory.js'
 
 uiFactory.addHTMLfromString({
-    str: `<link rel="stylesheet" href="../js/UI/projects/carouselTab.css">`,
+    str: `<link rel="stylesheet" href="./js/UI/projects/carouselTab.css">`,
     parent: document.body
 });
 

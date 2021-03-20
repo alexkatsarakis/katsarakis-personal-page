@@ -25,28 +25,28 @@
         ],
         "images": [
             {
-                "url":"../js/UI/projects/images/screens1.png"
+                "url":"./js/UI/projects/images/screens1.png"
             },
             {
-                "url":"../js/UI/projects/images/screens8.png"
+                "url":"./js/UI/projects/images/screens8.png"
             },
             {
-                "url":"../js/UI/projects/images/screens2.png"
+                "url":"./js/UI/projects/images/screens2.png"
             },
             {
-                "url":"../js/UI/projects/images/screens3.png"
+                "url":"./js/UI/projects/images/screens3.png"
             },
             {
-                "url":"../js/UI/projects/images/screens4.png"
+                "url":"./js/UI/projects/images/screens4.png"
             },
             {
-                "url":"../js/UI/projects/images/screens5.png"
+                "url":"./js/UI/projects/images/screens5.png"
             },
             {
-                "url":"../js/UI/projects/images/screens6.png"
+                "url":"./js/UI/projects/images/screens6.png"
             },
             {
-                "url":"../js/UI/projects/images/screens7.png"
+                "url":"./js/UI/projects/images/screens7.png"
             }
         ]
     },
@@ -75,28 +75,28 @@
         ],
         "images": [
             {
-                "url":"../js/UI/projects/images/screens1.png"
+                "url":"./js/UI/projects/images/screens1.png"
             },
             {
-                "url":"../js/UI/projects/images/screens8.png"
+                "url":"./js/UI/projects/images/screens8.png"
             },
             {
-                "url":"../js/UI/projects/images/screens2.png"
+                "url":"./js/UI/projects/images/screens2.png"
             },
             {
-                "url":"../js/UI/projects/images/screens3.png"
+                "url":"./js/UI/projects/images/screens3.png"
             },
             {
-                "url":"../js/UI/projects/images/screens4.png"
+                "url":"./js/UI/projects/images/screens4.png"
             },
             {
-                "url":"../js/UI/projects/images/screens5.png"
+                "url":"./js/UI/projects/images/screens5.png"
             },
             {
-                "url":"../js/UI/projects/images/screens6.png"
+                "url":"./js/UI/projects/images/screens6.png"
             },
             {
-                "url":"../js/UI/projects/images/screens7.png"
+                "url":"./js/UI/projects/images/screens7.png"
             }
         ]
     },
@@ -119,16 +119,16 @@
         ],
         "images": [
             {
-                "url":"../js/UI/projects/images/improveme4.png"
+                "url":"./js/UI/projects/images/improveme4.png"
             },
             {
-                "url":"../js/UI/projects/images/improveme2.png"
+                "url":"./js/UI/projects/images/improveme2.png"
             },
             {
-                "url":"../js/UI/projects/images/improveme1.png"
+                "url":"./js/UI/projects/images/improveme1.png"
             },
             {
-                "url":"../js/UI/projects/images/improveme3.png"
+                "url":"./js/UI/projects/images/improveme3.png"
             }
         ]
     },
@@ -152,19 +152,19 @@
         ],
         "images": [
             {
-                "url":"../js/UI/projects/images/qaDiscord1.png"
+                "url":"./js/UI/projects/images/qaDiscord1.png"
             },
             {
-                "url":"../js/UI/projects/images/qaDiscord2.png"
+                "url":"./js/UI/projects/images/qaDiscord2.png"
             },
             {
-                "url":"../js/UI/projects/images/qaDiscord3.png"
+                "url":"./js/UI/projects/images/qaDiscord3.png"
             },
             {
-                "url":"../js/UI/projects/images/qaDiscord4.png"
+                "url":"./js/UI/projects/images/qaDiscord4.png"
             },
             {
-                "url":"../js/UI/projects/images/qaDiscord5.png"
+                "url":"./js/UI/projects/images/qaDiscord5.png"
             }
         ]
     },
