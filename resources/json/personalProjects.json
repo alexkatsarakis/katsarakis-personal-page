@@ -168,6 +168,44 @@
             }
         ]
     },
+    "Super Mario": {
+        "title": "Super Mario Implementation",
+        "description": "A Super Mario Implementation using Allegro5 with in-house Game Engine",
+        "information": {
+            "Language": "C++",
+            "External Tools": [
+                "Allegro5" 
+            ],
+            "Collaborators": [
+                "Marios Ntoulas",
+                "Emmanouil Agapakis"
+            ]
+        },
+        "links": [
+            {
+                "name": "Demo Video",
+                "url": "https://github.com/ntoulasm/Super-Mario"
+            },
+            {
+                "name": "Repository",
+                "url": "https://github.com/ntoulasm/Super-Mario"
+            }
+        ],
+        "images": [
+            {
+                "url":"./js/UI/projects/images/SM1.png"
+            },
+            {
+                "url":"./js/UI/projects/images/SM2.png"
+            },
+            {
+                "url":"./js/UI/projects/images/SM3.png"
+            },
+            {
+                "url":"./js/UI/projects/images/SM4.png"
+            }
+        ]
+    },
     "RefaFriend": {
         "title": "Refer A Friend Discord Bot",
         "description": "A Discord Bot to keep track invites on a discord server and a live leaderboard",
@@ -187,7 +225,18 @@
             }
         ],
         "images": [
-            
+            {
+                "url":"./js/UI/projects/images/RaF1.png"
+            },
+            {
+                "url":"./js/UI/projects/images/RaF2.png"
+            },
+            {
+                "url":"./js/UI/projects/images/RaF3.png"
+            },
+            {
+                "url":"./js/UI/projects/images/RaF4.png"
+            }
         ]
     },
     "GenericList": {

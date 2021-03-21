@@ -28,6 +28,7 @@
     position: absolute;
     margin-top: 20%;
     margin-left: 25%;
+    margin-right: 25%;
     z-index: 2;
     display: -webkit-inline-box;
 }
@@ -37,20 +38,11 @@
     color: var(--main-color-hover);
 }
 
-
-@media screen and (max-width: 1200px) {
-    #aboutMe-personImage {
-        position: absolute;
-        width: 30%;
-        z-index: 5;
-        height: 60vh;
-        margin-top: 5%;
-        right: 0;
-        background-image: url("./myself.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
+#aboutMe-description {
+    font-size: 1em;
+    color: var(--main-color-hover);
 }
+
 
 @media screen and (max-width: 1200px) {
     #aboutMe-personImageHead {
@@ -58,7 +50,53 @@
         width: 30%;
         z-index: 5;
         height: 20vh;
-        margin-top: 17%;
+        margin-top: 25%;
+        right: 10%;
+        background-image: url("./myselfHead.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #aboutMe-info {
+        position: absolute;
+        margin-top: 20%;
+        margin-left: 25%;
+        margin-right: 0;
+        z-index: 2;
+        display: -webkit-inline-box;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #aboutMe-personImageHead {
+        position: absolute;
+        width: 30%;
+        z-index: 5;
+        height: 20vh;
+        margin-top: 35%;
+        right: 10%;
+        background-image: url("./myselfHead.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #aboutMe-info {
+        position: absolute;
+        margin-top: 10%;
+        margin-left: 25%;
+        margin-right: 0;
+        z-index: 2;
+        display: -webkit-inline-box;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #aboutMe-personImageHead {
+        position: absolute;
+        width: 30%;
+        z-index: 5;
+        height: 20vh;
+        margin-top: 45%;
         right: 10%;
         background-image: url("./myselfHead.png");
         background-repeat: no-repeat;
@@ -66,14 +104,53 @@
     }
 }
 
+
 @media screen and (max-width: 600px) {
     #aboutMe-personImageHead {
         position: absolute;
-        width: 30%;
+        width: 60%;
+        margin-left: 30%;
+        margin-right: 30%;
         z-index: 5;
-        height: 20vh;
-        margin-top: 50%;
-        right: 10%;
+        height: 40vh;
+        margin-top: 300px;
+        background-image: url("./myselfHead.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #aboutMe-info {
+        position: absolute;
+        margin-top: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+        z-index: 2;
+        display: -webkit-inline-box;
+    }
+    
+    #aboutMe-coverImage {
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+        height: 80vh;
+        background-color: var(--main-color);
+    }
+
+    #aboutMe-description {
+        font-size: small;
+        color: var(--main-color-hover);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #aboutMe-personImageHead {
+        position: absolute;
+        width: 60%;
+        margin-left: 30%;
+        margin-right: 30%;
+        z-index: 5;
+        height: 40vh;
+        margin-top: 350px;
         background-image: url("./myselfHead.png");
         background-repeat: no-repeat;
         background-size: contain;
