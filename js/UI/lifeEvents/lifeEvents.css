@@ -67,16 +67,29 @@
 }
 
 .experience-extended-item-title {
+    float: left;
     color: var(--main-color-hover);
     font-size: large;
+    font-weight: bold;
+    text-decoration: underline;
     padding-bottom: 5px;
     width: 65%;
     margin-left: 5%;
 }
 .experience-extended-item-description {
+    float: left;
     color: var(--main-color-hover);
     width: 65%;
     margin-left: 5%;
+}
+
+.experience-extended-item-image {
+    width: 30%;
+    float: right;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #experience-extended-item-top-left {

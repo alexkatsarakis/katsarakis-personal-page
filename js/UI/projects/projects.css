@@ -71,6 +71,7 @@
     color: var(--main-color-text);
     margin-left: 10px;
     cursor: pointer;
+    text-decoration: underline;
 }
 
 .project-item-carousel-wrap {

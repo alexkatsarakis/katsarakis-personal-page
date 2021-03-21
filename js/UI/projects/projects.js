@@ -65,12 +65,11 @@ async function onProjectsLoaded(){
         if(proj.links){
             proj.links.forEach((link)=>{
                 let but = uiFactory.createElement({
-                    type: 'a',
                     parent: butWrapper,
                     classList: 'project-item-linkButton',
                     innerHtml: link.name
                 });
-                but.href = link.url;
+                but.onclick = ()=>window.open(link.url);
             });
         }
 
@@ -94,16 +93,19 @@ async function onProjectsLoaded(){
             classList: 'project-item-info',
             innerHtml: infoString
         });
-        uiFactory.createElement({
+        let extraInfoBut = uiFactory.createElement({
             parent: butWrapper,
             classList: 'project-item-linkButton',
             innerHtml: 'Extra Information'
-        }).onclick = (() => {
+        });
+        extraInfoBut.onclick = (() => {
             if(info.style.display !== 'block')
                 info.style.display = 'block';
             else 
                 info.style.display = 'none';
         });
+
+        extraInfoBut.style.textDecoration = 'none';
 
     }
 

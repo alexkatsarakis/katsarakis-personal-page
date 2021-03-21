@@ -37,19 +37,24 @@ function createBackgroundItem(item, parent){
         classList: 'background-category-item-body',
         innerHtml: item.body || ''
     });
+    if(item.body)
+        uiFactory.createElement({
+            parent: itemWrapper,
+            type: 'br'
+        });
 
     if(item.time)
         uiFactory.createElement({
             parent: itemWrapper,
             classList: 'background-category-item-time',
-            innerHtml: `Time: ${item.time.started} - ${item.time.ended || 'Present'}`
+            innerHtml: `${item.time.started} - ${item.time.ended || 'Present'}`
         });
     
     if(item.location)
         uiFactory.createElement({
             parent: itemWrapper,
             classList: 'background-category-item-location',
-            innerHtml: `Location: ${item.location}`
+            innerHtml: `${item.location}`
         });
 }
 

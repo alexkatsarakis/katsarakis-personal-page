@@ -7,38 +7,41 @@
             "time": {
                 "started": "2019"
             },
-            "body": "- Computer Languages and Compilers (CS-340) Feb 2021 - Now \n- Software Engineering (CS-352) Sept 2020 - Feb 2021, \n- Computer Languages and Compilers (CS-340) Feb 2020 - Jun 2020, \n- Data Structures (CS-240) Sep 2019 - Feb 2020",
+            "body": "• [CS-340] (Feb 2021 - Jun 2021) Computer Languages and Compilers  \n• [CS-352] (Sep 2020 - Feb 2021) Software Engineering, \n• [CS-340] (Feb 2020 - Jun 2020) Computer Languages and Compilers, \n• [CS-240] (Sep 2019 - Feb 2020) Data Structures",
             "location": "Heraklion, Crete, Greece"
         },
         {
-            "head": "Intern",
+            "head": "Research Intern",
             "comment": "Foundation for Research and Technology - Hellas (FORTH)",
             "image": "iteForth.png",
             "time": {
                 "started": "Jun 2017",
                 "ended": "Sep 2017"
             },
+            "body": "Calculating Cude Memory Transfer Overhead for GPUs\nSupervisor: Angelos Bilas",
             "location": "Heraklion, Crete, Greece"
         }
     ],
     "Education": [
         {
             "head": "University of Crete, CSD",
-            "comment": "Master's degree, Computer Software Engineering",
+            "comment": "Master's degree, Computer Science, Software Engineering",
             "image": "csdUoC.png",
             "time": {
                 "started": "2019"
             },
+            "body": "Thesis: Interactive Live Game Development\nSupervisor: Anthony Savidis",
             "location": "Heraklion, Crete, Greece"
         },
         {
             "head": "University of Crete, CSD",
-            "comment": "Bachelor's degree, Computer Software Engineering, 8.18/10",
+            "comment": "Bachelor's degree, Computer Science, 8.18/10",
             "image": "csdUoC.png",
             "time": {
                 "started": "2015",
                 "ended": "2019"
             },
+            "body": "Thesis: General Purpose Collaborative System for Programming Languages\nPublication: Collaborative Visual Programming Workspace for Blockly\nSupervisor: Anthony Savidis",
             "location": "Heraklion, Crete, Greece"
         }
     ]

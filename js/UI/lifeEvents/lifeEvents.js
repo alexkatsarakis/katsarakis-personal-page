@@ -27,6 +27,12 @@ function showEvents(events){
             innerHtml: events[i].description,
             classList: 'experience-extended-item-description'
         });
+        if(events[i].image){
+            uiFactory.createElement({
+                parent: tabs[i],
+                classList: 'experience-extended-item-image'
+            }).style.backgroundImage = `url("./js/UI/lifeEvents/images/${events[i].image.url}")`;
+        }
         tabs[i].style.display = 'block';
     }
 

@@ -8,7 +8,7 @@
         },
         "image": {
             "description": "University of Crete degree",
-            "url": ""
+            "url": "graduation.jpg"
         },
         "importance": 10
     },
@@ -21,7 +21,7 @@
         },
         "image": {
             "description": "University of Crete first year",
-            "url": ""
+            "url": "csdStarted.jpg"
         },
         "importance": 10
     },
@@ -31,6 +31,10 @@
         "date": {
             "year": 2015,
             "month": 9
+        },
+        "image": {
+            "description": "University of Crete first year",
+            "url": "csdStarted.jpg"
         },
         "importance": 10
     },
