@@ -206,6 +206,43 @@
             }
         ]
     },
+    "Mortal Combat": {
+        "title": "Mortal Combat Implementation",
+        "description": "A Mortal Combat Implementation using Allegro5 with in-house Game Engine",
+        "information": {
+            "Language": "C++",
+            "External Tools": [
+                "Allegro5" 
+            ],
+            "Collaborators": [
+                "Emmanouil Adamakis",
+                "Emmanouil Agapakis"
+            ]
+        },
+        "links": [
+            {
+                "name": "Demo Video",
+                "url": "https://github.com/ntoulasm/Super-Mario"
+            }
+        ],
+        "images": [
+            {
+                "url":"./js/UI/projects/images/MC1.png"
+            },
+            {
+                "url":"./js/UI/projects/images/MC2.png"
+            },
+            {
+                "url":"./js/UI/projects/images/MC3.png"
+            },
+            {
+                "url":"./js/UI/projects/images/MC4.png"
+            },
+            {
+                "url":"./js/UI/projects/images/MC5.png"
+            }
+        ]
+    },
     "RefaFriend": {
         "title": "Refer A Friend Discord Bot",
         "description": "A Discord Bot to keep track invites on a discord server and a live leaderboard",

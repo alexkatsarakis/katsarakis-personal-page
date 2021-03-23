@@ -18,7 +18,7 @@
                 "started": "Jun 2017",
                 "ended": "Sep 2017"
             },
-            "body": "Calculating CUDA Memory Transfer Overhead for GPUs\nSupervisor: Angelos Bilas",
+            "body": "Calculating CUDA Memory Transfer Overhead for GPUs\nAdvisor: Angelos Bilas",
             "location": "Heraklion, Crete, Greece"
         }
     ],
@@ -30,7 +30,7 @@
             "time": {
                 "started": "2019"
             },
-            "body": "Thesis: Interactive Live Game Development\nSupervisor: Anthony Savidis",
+            "body": "Thesis: Interactive Live Game Development\nAdvisor: Anthony Savidis",
             "location": "Heraklion, Crete, Greece"
         },
         {
@@ -41,7 +41,7 @@
                 "started": "2015",
                 "ended": "2019"
             },
-            "body": "Thesis: General Purpose Collaborative System for Programming Languages\nPublication: Collaborative Visual Programming Workspace for Blockly\nSupervisor: Anthony Savidis",
+            "body": "Thesis: General Purpose Collaborative System for Programming Languages\nPublication: Collaborative Visual Programming Workspace for Blockly\nAdvisor: Anthony Savidis",
             "location": "Heraklion, Crete, Greece"
         }
     ]

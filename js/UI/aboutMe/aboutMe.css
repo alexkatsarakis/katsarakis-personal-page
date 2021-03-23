@@ -113,7 +113,7 @@
         margin-right: 30%;
         z-index: 5;
         height: 40vh;
-        margin-top: 300px;
+        margin-top: 150px;
         background-image: url("./myselfHead.png");
         background-repeat: no-repeat;
         background-size: contain;
@@ -136,6 +136,11 @@
         background-color: var(--main-color);
     }
 
+    #aboutMe-name {
+        font-size: x-large;
+        color: var(--main-color-hover);
+    }
+
     #aboutMe-description {
         font-size: small;
         color: var(--main-color-hover);
@@ -150,7 +155,22 @@
         margin-right: 30%;
         z-index: 5;
         height: 40vh;
-        margin-top: 350px;
+        margin-top: 200px;
+        background-image: url("./myselfHead.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #aboutMe-personImageHead {
+        position: absolute;
+        width: 60%;
+        margin-left: 30%;
+        margin-right: 30%;
+        z-index: 5;
+        height: 40vh;
+        margin-top: 250px;
         background-image: url("./myselfHead.png");
         background-repeat: no-repeat;
         background-size: contain;
