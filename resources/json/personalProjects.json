@@ -206,9 +206,9 @@
             }
         ]
     },
-    "Mortal Combat": {
-        "title": "Mortal Combat Implementation",
-        "description": "A Mortal Combat Implementation using Allegro5 with in-house Game Engine",
+    "Mortal Kombat": {
+        "title": "Mortal Kombat Implementation",
+        "description": "A Mortal Kombat Implementation using Allegro5 with in-house Game Engine",
         "information": {
             "Language": "C++",
             "External Tools": [

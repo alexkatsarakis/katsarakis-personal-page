@@ -1,14 +1,41 @@
 #contacts-wrapper {
-    display: flex;
+    width: 100%;
+}
+
+#contacts-title {
+    color: var(--main-color-text);
+    width: 100%;
+    font-size: x-large;
+    text-align: center;
 }
 
 .contact-item {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-item-but {
     height: 4vh;
     width: 4vh;
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: white;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.contact-item-name-left {
+    line-height: 4vh;
+    width: calc(50% - 2vh - 10px);
+    text-align: right;
+}
+
+.contact-item-name-right {
+    line-height: 4vh;
+    width: calc(50% - 2vh - 10px);
 }

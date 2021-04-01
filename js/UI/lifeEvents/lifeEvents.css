@@ -1,9 +1,12 @@
+#experience-cover {
+    margin-bottom: 5%;
+}
+
 #experience-title {
+    color: var(--main-color-text);
     width: 100%;
+    font-size: x-large;
     text-align: center;
-    color: var(--main-color);
-    font-size: large;
-    font-weight: bold;
 }
 
 .experience-year-long {
@@ -110,4 +113,10 @@
 
 .experience-explanation-line {
     position: absolute;
+}
+
+@media screen and (max-width: 600px) {
+    #experience-cover {
+        display: none;
+    }
 }
