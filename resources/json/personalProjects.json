@@ -1,6 +1,6 @@
 {
     "GameStudio": {
-        "title": "Game Studio: Live Game Development",
+        "title": "Live Game Studio",
         "description": "A browser game engine for interactive game development with a visual programming Language",
         "information": {
             "Language": "Javascript",
@@ -66,7 +66,7 @@
         "links": [
             {
                 "name": "Demo Video",
-                "url": "https://alexkatsarakis.github.io/"
+                "url": "https://www.youtube.com/watch?v=Gg7fnA34RF4"
             },
             {
                 "name": "Paper",
@@ -75,28 +75,16 @@
         ],
         "images": [
             {
-                "url":"./js/UI/projects/images/screens1.png"
+                "url":"./js/UI/projects/images/collab1.png"
             },
             {
-                "url":"./js/UI/projects/images/screens8.png"
+                "url":"./js/UI/projects/images/collab2.png"
             },
             {
-                "url":"./js/UI/projects/images/screens2.png"
+                "url":"./js/UI/projects/images/collab3.png"
             },
             {
-                "url":"./js/UI/projects/images/screens3.png"
-            },
-            {
-                "url":"./js/UI/projects/images/screens4.png"
-            },
-            {
-                "url":"./js/UI/projects/images/screens5.png"
-            },
-            {
-                "url":"./js/UI/projects/images/screens6.png"
-            },
-            {
-                "url":"./js/UI/projects/images/screens7.png"
+                "url":"./js/UI/projects/images/collab4.png"
             }
         ]
     },
