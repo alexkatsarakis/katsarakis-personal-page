@@ -122,6 +122,66 @@ function filterProjects(projects,{title, language, collaborator, link}){
     return toReturn;
 }
 
+function getLanguageFilters(projects){
+    const filters = ['All'];
+    for(let i in projects){
+        const proj = projects[i];
+        if(!filters.includes(proj.information.Language)){
+            filters.push(proj.information.Language);
+        }
+    }
+
+    return filters;
+}
+
+function getCollaboratorFilters(projects){
+    const filters = ['All'];
+    for(let i in projects){
+        const proj = projects[i];
+        if(!proj.information.Collaborators)continue;
+
+        proj.information.Collaborators.forEach(collab => {
+            if(!filters.includes(collab)){
+                filters.push(collab);
+            }
+        });
+    }
+
+    return filters;
+}
+
+function getLinksFilters(projects){
+    const filters = ['All'];
+    for(let i in projects){
+        const proj = projects[i];
+        if(!proj.links)continue;
+
+        const links = proj.links;
+        for(let j in links){
+            if(!filters.includes(links[j].name)){
+                filters.push(links[j].name);
+            }
+        }
+    }
+
+    return filters;
+}
+
+function renderProjects(projects, wrapper){
+    let counter = 0;
+    for(let i in projects){
+        let proj = projects[i];
+        
+        createProjectUI(proj, wrapper);
+        counter++;
+    }
+
+    uiFactory.createElement({
+        parent: wrapper,
+        innerHtml: 'Projects Shown ('+counter+')'
+    });
+}
+
 async function onProjectsLoaded(){
 
 
@@ -129,18 +189,58 @@ async function onProjectsLoaded(){
     resp = await httpRequest('GET', './resources/json/personalProjects.json', null);
     resp = JSON.parse(resp);
 
-    let projectsWrapper = document.getElementById('projects-wrapper');
+    let projectsResult  = document.getElementById('projects-results');
+    let projectFilters  = document.getElementById('projects-filters');
 
-    let projs = filterProjects(resp,{
-        // collaborator: 'Emmanouil Adamakis'
+    const dropdownLanguages = uiFactory.createDropdown({
+        parent: projectFilters,
+        array: getLanguageFilters(resp),
+        label: 'Choose Language: '
     });
 
-    for(let i in projs){
-        let proj = projs[i];
-        
-        createProjectUI(proj,projectsWrapper);
-
+    dropdownLanguages.onchange = ()=>{
+        let projs = filterProjects(resp,{
+            link: (dropdownLinks.value !== 'All')?dropdownLinks.value: undefined,
+            collaborator: (dropdownCollabs.value !== 'All')?dropdownCollabs.value: undefined,
+            language: (dropdownLanguages.value !== 'All')?dropdownLanguages.value: undefined
+        });
+        projectsResult.innerHTML = '';
+        renderProjects(projs, projectsResult);
     }
+
+    const dropdownCollabs = uiFactory.createDropdown({
+        parent: projectFilters,
+        array: getCollaboratorFilters(resp),
+        label: 'Choose Collaborator: '
+    });
+
+    dropdownCollabs.onchange = ()=>{
+        let projs = filterProjects(resp,{
+            link: (dropdownLinks.value !== 'All')?dropdownLinks.value: undefined,
+            collaborator: (dropdownCollabs.value !== 'All')?dropdownCollabs.value: undefined,
+            language: (dropdownLanguages.value !== 'All')?dropdownLanguages.value: undefined
+        });
+        projectsResult.innerHTML = '';
+        renderProjects(projs, projectsResult);
+    }
+
+    const dropdownLinks = uiFactory.createDropdown({
+        parent: projectFilters,
+        array: getLinksFilters(resp),
+        label: 'Choose Possible Link: '
+    });
+
+    dropdownLinks.onchange = ()=>{
+        let projs = filterProjects(resp,{
+            link: (dropdownLinks.value !== 'All')?dropdownLinks.value: undefined,
+            collaborator: (dropdownCollabs.value !== 'All')?dropdownCollabs.value: undefined,
+            language: (dropdownLanguages.value !== 'All')?dropdownLanguages.value: undefined
+        });
+        projectsResult.innerHTML = '';
+        renderProjects(projs, projectsResult);
+    }
+
+    renderProjects(resp, projectsResult);
 
 
 

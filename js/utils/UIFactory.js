@@ -17,6 +17,31 @@ class UIFactory {
     addHTMLfromString({str,parent}){
         parent.insertAdjacentHTML('afterbegin',str);
     }
+
+    createDropdown({parent,id,classList,array, label}){
+        const rand = Math.floor(Math.random()*10000);
+        let labelDom = document.createElement('label');
+        labelDom.innerHTML = label;
+        labelDom.for = rand;
+        let div = document.createElement('select');
+        div.name = rand;
+
+        if(id) div.id = id;
+        if(classList) div.classList = classList;
+
+        array.forEach(item =>{
+            this.createElement({
+                type:'option',
+                value: item,
+                innerHtml: item,
+                parent: div
+            });
+        });
+
+        if(parent && label) parent.appendChild(labelDom);
+        if(parent) parent.appendChild(div);
+        return div;
+    }
 }
 
 const uiFactory = new UIFactory();
