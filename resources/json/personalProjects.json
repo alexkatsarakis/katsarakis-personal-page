@@ -156,6 +156,26 @@
             }
         ]
     },
+    "A*": {
+        "title": "A* Programming Language with meta-programming support",
+        "description": "An interpreted language created from scratch on C++ with all the basic features of a conventional programming languages and support for meta-programming and many more features (Developed for post grad. course CS540)",
+        "information": {
+            "Language": "C++",
+            "Collaborators": [
+                "Emmanouil Agapakis",
+                "Emmanouil Papadogiannakis",
+                "Myron Tsatsarakis"
+            ]
+        },
+        "links": [
+            {
+                "name": "Repository",
+                "url": "https://github.com/alexkatsarakis/HY540_project"
+            }
+        ],
+        "images": [
+        ]
+    },
     "Super Mario": {
         "title": "Super Mario Implementation",
         "description": "A Super Mario Implementation using Allegro5 with in-house Game Engine",
@@ -264,16 +284,51 @@
             }
         ]
     },
-    "GenericList": {
-        "title": "Generic List",
-        "description": "A Generic C++ list for all types, with dynamic (and configurable) insert,delete,search options",
+    "ParallelDS": {
+        "title": "Parallel Data Structures",
+        "description": "Parallel Data Structures Library with Templates",
+        "information": {
+            "Language": "C++",
+            "External Tools": [
+                "MPI" 
+            ]
+        },
+        "links": [
+            {
+                "name": "Repository",
+                "url": "https://github.com/alexkatsarakis/katsaFullRepo"
+            }
+        ],
+        "images": [
+            
+        ]
+    },
+    "ConcurrentFS": {
+        "title": "Concurrent File System",
+        "description": "Concurrent File System Simulation with MPI",
         "information": {
             "Language": "C++"
         },
         "links": [
             {
                 "name": "Repository",
-                "url": "https://github.com/alexkatsarakis/genericList"
+                "url": "https://github.com/alexkatsarakis/HY486_project2"
+            }
+        ],
+        "images": [
+            
+        ]
+    },
+    "ConcurrentFS": {
+        "title": "Concurrent File System",
+        "description": "Concurrent File System Simulation with MPI",
+        "information": {
+            "Language": "C++"
+        },
+        "links": [
+            {
+                "name": "Repository",
+                "url": "https://github.com/alexkatsarakis/HY486_project2"
             }
         ],
         "images": [

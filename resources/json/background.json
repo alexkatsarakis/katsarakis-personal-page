@@ -30,7 +30,7 @@
             "time": {
                 "started": "2019"
             },
-            "body": "Thesis: Interactive Live Game Development\nAdvisor: Anthony Savidis",
+            "body": "Thesis: Game Development as a Serious Game with Live-Programming and Time-Travel Mechanics\nAdvisor: Anthony Savidis",
             "location": "Heraklion, Crete, Greece"
         },
         {
@@ -43,6 +43,26 @@
             },
             "body": "Thesis: General Purpose Collaborative System for Programming Languages\nPublication: Collaborative Visual Programming Workspace for Blockly\nAdvisor: Anthony Savidis",
             "location": "Heraklion, Crete, Greece"
+        }
+    ],
+    "Publications": [
+        {
+            "head": "Game Development as a Serious Game with Live-Programming and Time-Travel Mechanics",
+            "comment": "IFIP ICEC 2021",
+            "image": "ifipIcec.png",
+            "time": {
+                "timeStamp": "2021"
+            },
+            "body": "Authors: Anthony Savidis, Alexandros Katsarakis"
+        },
+        {
+            "head": "Collaborative Visual Programming Workspace for Blockly",
+            "comment": "VL/HCC 2020",
+            "image": "vlhcc.png",
+            "time": {
+                "timeStamp": "2020"
+            },
+            "body": "Authors: Yannis Valsamakis, Anthony Savidis, Emanuel Agapakis, Alexandros Katsarakis"
         }
     ]
 }
