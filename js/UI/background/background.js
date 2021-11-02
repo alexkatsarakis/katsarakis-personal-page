@@ -43,6 +43,17 @@ function createBackgroundItem(item, parent){
             type: 'br'
         });
 
+    if(item.link){
+        const link = uiFactory.createElement({
+            type: 'a',
+            parent: itemWrapper,
+            classList: 'background-category-item-body',
+            innerHtml: item.link.alias
+        });
+        if(item.link.newWindow === true)link.target = '_blank';
+        link.href = item.link.url;
+    }
+
     if(item.time){
         if(item.time.started){
             uiFactory.createElement({

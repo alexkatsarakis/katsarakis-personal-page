@@ -62,6 +62,11 @@
             "time": {
                 "timeStamp": "2020"
             },
+            "link": {
+                "alias": "Paper Link",
+                "url": "https://www.researchgate.net/publication/342003658_Collaborative_Visual_Programming_Workspace_for_Blockly",
+                "newWindow": true
+            },
             "body": "Authors: Yannis Valsamakis, Anthony Savidis, Emanuel Agapakis, Alexandros Katsarakis"
         }
     ]

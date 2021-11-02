@@ -82,7 +82,7 @@ function createProjectUI(proj,wrapper){
     extraInfoBut.style.textDecoration = 'none';
 }
 
-function filterProjects(projects,{title, language, collaborator, link}){
+function filterProjects(projects,{title, language, collaborator, link, tools}){
     const toReturn = {};
 
     for(let i in projects){
@@ -104,6 +104,12 @@ function filterProjects(projects,{title, language, collaborator, link}){
         
         if(collaborator 
         && (!proj.information.Collaborators || !(proj.information.Collaborators.includes(collaborator)))){
+            delete toReturn[i];
+            continue;
+        }
+        
+        if(tools 
+        && (!proj.information['External Tools'] || !(proj.information['External Tools'].includes(tools)))){
             delete toReturn[i];
             continue;
         }
@@ -150,6 +156,22 @@ function getCollaboratorFilters(projects){
     return filters;
 }
 
+function getExternalToolsFilters(projects){
+    const filters = ['All'];
+    for(let i in projects){
+        const proj = projects[i];
+        if(!proj.information['External Tools'])continue;
+
+        proj.information['External Tools'].forEach(tool => {
+            if(!filters.includes(tool)){
+                filters.push(tool);
+            }
+        });
+    }
+
+    return filters;
+}
+
 function getLinksFilters(projects){
     const filters = ['All'];
     for(let i in projects){
@@ -174,12 +196,8 @@ function renderProjects(projects, wrapper){
         
         createProjectUI(proj, wrapper);
         counter++;
+        if(counter === 10)break;
     }
-
-    uiFactory.createElement({
-        parent: wrapper,
-        innerHtml: 'Projects Shown ('+counter+')'
-    });
 }
 
 async function onProjectsLoaded(){
@@ -202,7 +220,8 @@ async function onProjectsLoaded(){
         let projs = filterProjects(resp,{
             link: (dropdownLinks.value !== 'All')?dropdownLinks.value: undefined,
             collaborator: (dropdownCollabs.value !== 'All')?dropdownCollabs.value: undefined,
-            language: (dropdownLanguages.value !== 'All')?dropdownLanguages.value: undefined
+            language: (dropdownLanguages.value !== 'All')?dropdownLanguages.value: undefined,
+            tools: (dropdownExternal.value !== 'All')?dropdownExternal.value: undefined
         });
         projectsResult.innerHTML = '';
         renderProjects(projs, projectsResult);
@@ -218,11 +237,30 @@ async function onProjectsLoaded(){
         let projs = filterProjects(resp,{
             link: (dropdownLinks.value !== 'All')?dropdownLinks.value: undefined,
             collaborator: (dropdownCollabs.value !== 'All')?dropdownCollabs.value: undefined,
-            language: (dropdownLanguages.value !== 'All')?dropdownLanguages.value: undefined
+            language: (dropdownLanguages.value !== 'All')?dropdownLanguages.value: undefined,
+            tools: (dropdownExternal.value !== 'All')?dropdownExternal.value: undefined
         });
         projectsResult.innerHTML = '';
         renderProjects(projs, projectsResult);
     }
+
+    const dropdownExternal = uiFactory.createDropdown({
+        parent: projectFilters,
+        array: getExternalToolsFilters(resp),
+        label: 'Choose External Tool: '
+    });
+
+    dropdownExternal.onchange = ()=>{
+        let projs = filterProjects(resp,{
+            link: (dropdownLinks.value !== 'All')?dropdownLinks.value: undefined,
+            collaborator: (dropdownCollabs.value !== 'All')?dropdownCollabs.value: undefined,
+            language: (dropdownLanguages.value !== 'All')?dropdownLanguages.value: undefined,
+            tools: (dropdownExternal.value !== 'All')?dropdownExternal.value: undefined
+        });
+        projectsResult.innerHTML = '';
+        renderProjects(projs, projectsResult);
+    }
+
 
     const dropdownLinks = uiFactory.createDropdown({
         parent: projectFilters,
@@ -234,7 +272,8 @@ async function onProjectsLoaded(){
         let projs = filterProjects(resp,{
             link: (dropdownLinks.value !== 'All')?dropdownLinks.value: undefined,
             collaborator: (dropdownCollabs.value !== 'All')?dropdownCollabs.value: undefined,
-            language: (dropdownLanguages.value !== 'All')?dropdownLanguages.value: undefined
+            language: (dropdownLanguages.value !== 'All')?dropdownLanguages.value: undefined,
+            tools: (dropdownExternal.value !== 'All')?dropdownExternal.value: undefined
         });
         projectsResult.innerHTML = '';
         renderProjects(projs, projectsResult);
