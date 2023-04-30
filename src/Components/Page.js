@@ -16,41 +16,49 @@ import { FaUniversity } from 'react-icons/fa';
 import { MdWork, MdMenu } from 'react-icons/md';
 import { AiOutlineContacts } from 'react-icons/ai';
 import { BsSunFill, BsCode } from 'react-icons/bs';
+import { Route, Routes, useNavigate, useParams } from 'react-router-dom';
 
 const linkToPageMap = {
     'Overview': {
         'icon': GiMagnifyingGlass,
-        'component': OverviewTab
+        'component': OverviewTab,
+        uri: 'overview'
     },
     'About Me': {
         'icon': IoMdInformationCircleOutline,
-        'component': AboutMeTab
+        'component': AboutMeTab,
+        uri: 'about-me'
     },
     'Education': {
         'icon': FaUniversity,
-        'component': EducationTab
+        'component': EducationTab,
+        uri: 'education'
     },
     'Experience': {
         'icon': MdWork,
-        'component': ExperienceTab
+        'component': ExperienceTab,
+        uri: 'experience'
     },
     'Publications': {
         'icon': IoMdDocument,
-        'component': PublicationsTab
+        'component': PublicationsTab,
+        uri: 'publications'
     },
     'Projects': {
         'icon': BsCode,
-        'component': ProjectsTab
+        'component': ProjectsTab,
+        uri: 'projects'
     },
     'Contact': {
         'icon': AiOutlineContacts,
-        'component': ContactTab
+        'component': ContactTab,
+        uri: 'contact'
     },
 }
 
 export const Page = (props) => {
-
-    const [ currentTab, setCurrentTab ] = useState('Overview');
+    const {'*': currentTab } = useParams();
+    const navigate = useNavigate();
     const [ showInfo, setShowInfo ] = useState(false);
 
 
@@ -59,7 +67,7 @@ export const Page = (props) => {
         return <div
                     key={i}
                     className={`${styles.pageLeftSideBottomItem}${currentTab === i? ` ${styles.pageLeftSideBottomItemActive}`: ''}`}
-                    onClick={()=>{setCurrentTab(i);onBurgerClick();}}
+                    onClick={()=>{navigate(linkToPageMap[i].uri);onBurgerClick();}}
                 >
                     {Icon && <Icon/>}{i}
                 </div>
@@ -94,7 +102,12 @@ export const Page = (props) => {
                 </div>
             </div>
             <div className={styles.pageRightSide}>
-                {React.createElement(linkToPageMap[currentTab].component)}
+                <Routes>
+                    {Object.values(linkToPageMap).map((value, index) => (
+                        <Route key={index} exact path={value.uri} element={React.createElement(value.component)} />
+                    ))}
+                    <Route exact path='/*' element={<div></div>} />
+                </Routes>
             </div>
         </div>
     </>
