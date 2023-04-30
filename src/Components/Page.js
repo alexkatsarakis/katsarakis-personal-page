@@ -106,7 +106,7 @@ export const Page = (props) => {
                     {Object.values(linkToPageMap).map((value, index) => (
                         <Route key={index} exact path={value.uri} element={React.createElement(value.component)} />
                     ))}
-                    <Route exact path='/*' element={<div></div>} />
+                    <Route exact path='/*' element={React.cloneElement(linkToPageMap.Overview.component)} />
                 </Routes>
             </div>
         </div>
