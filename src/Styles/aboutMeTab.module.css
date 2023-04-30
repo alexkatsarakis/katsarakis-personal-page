@@ -1,0 +1,30 @@
+.wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: var(--main-theme-text);
+    height: 100%;
+    overflow-y: auto;
+}
+
+.itemWrap {
+    display: flex;
+    width: 100%;
+    gap: 16px;
+    background-color: var(--main-theme);
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.itemMain {
+
+}
+
+.title {
+    background-color: var(--main-theme);
+    padding: 16px;
+    border-radius: 10px;
+    font-size: larger;
+    font-weight: bold;
+}

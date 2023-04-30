@@ -1,0 +1,49 @@
+.wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 16px;
+    color: var(--main-theme-text);
+}
+
+.myPic {
+    width: 80%;
+    border-radius: 10px;
+    aspect-ratio: 1.45;
+    align-self: center;
+}
+
+.myName {
+    width: 100%;
+    font-size: 2em;
+}
+
+.myOccupation {
+    width: 100%;
+    margin-top: -8px;
+    font-size: 1.5em;
+}
+
+.item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-title {
+    width: 30%;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.item-link {
+    font-size: 15px;
+    text-decoration: underline;
+    cursor: pointer;
+    overflow-wrap: anywhere;
+}
+
+.item-value {
+    font-size: 15px;
+}
