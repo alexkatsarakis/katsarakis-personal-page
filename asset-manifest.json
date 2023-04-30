@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/katsarakis-personal-page/static/css/main.b31b4e50.css",
-    "main.js": "/katsarakis-personal-page/static/js/main.1b7cfa79.js",
+    "main.js": "/katsarakis-personal-page/static/js/main.5cca7a14.js",
     "static/media/myself.jpg": "/katsarakis-personal-page/static/media/myself.f364c8dc051dbfb4ca30.jpg",
     "static/media/UoC_logo.png": "/katsarakis-personal-page/static/media/UoC_logo.9cbeb138f4c44172fa86.png",
     "index.html": "/katsarakis-personal-page/index.html"
   },
   "entrypoints": [
     "static/css/main.b31b4e50.css",
-    "static/js/main.1b7cfa79.js"
+    "static/js/main.5cca7a14.js"
   ]
 }
